@@ -248,3 +248,14 @@ edge_proofs.root_version + edge_proofs.edge_id
 A proof is only valid for the exact root version it was generated under. If the
 membership edge set changes, the Merkle root changes and new proofs must be
 generated for the new committed version.
+
+              signed by issuer
+                    |
+                    v
+              root_hash
+             /    |    \
+        proof1  proof2  proof3
+          |       |
+          v       v
+ user -> team   team -> org
+
